@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Home</title>
+<style>
+.recipes{
+  background-image: url(https://www.photoblog.com/learn/wp-content/uploads/2019/02/Dark-and-Moody-Shots-2-2.jpg);
+}
+.cakethree{
+background-image: url(https://static1.squarespace.com/static/53da4b35e4b0853b6efd976a/5888ea9646c3c4d4d975ab0f/5888eaa72e69cfea19bd1771/1485367985664/Dark_Food_Chocolate_Cake_8.JPG?format=1500w);
+}
+.salad{
+background-image:url(https://images.squarespace-cdn.com/content/v1/57c5e022197aea4e35e90381/1479329189644-35XCRN0XAOAQACDJ5Y1F/ke17ZwdGBToddI8pDm48kGaZxpPT5ToRSuQsc54seGJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UUrhxjLO1CMQIOwAluptPh0_S_uB9-UNnm4sgU3t3yPtKkmXVT_xGV3fBWPDXIkqAg/Dark_CakeWhole_1.jpg?format=1000w);}
+.salad,.recipes,.cakethree 
+{
+background-position: center;
+background-repeat: no-repeat;
+background-color:#0c0804;
+background-size: cover;
+min-height: 95%;
+background-attachment: fixed;
+}
+.textbg{background-color:#0c0804;}
+.textsection1{font-size: 150px;
+color:#be7e3e;
+text-align: center;
+font-style: italic;}
+.textsection{
+color:#be7e3e;
+font-size: 35px;
+text-align: center;
+font-style: italic;}
+ .navigation{background-color:#0c0804;
+ display: block;
+ width:14%;
+  float:left;
+  text-align: center;
+   color:#be7e3e;
+  font-size: 25px;
+  padding: 14px 16px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  font-style: italic;
+  background-color:#be7e3e;
+  color: #0c0804;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;}
+
+</style>
+</head>
+<body>
+<nav>
+  <a href="example.html" class="navigation">Home</a>
+  <a href="gallery.html" class="navigation">Gallery</a>
+  <a href="about.html" class="navigation">About Us</a>
+  <a href="contact.html" class="navigation">Contact Us</a>
+  <a href="register.html" class="navigation">Register</a>
+  <a href="sign.html" class="navigation">Log In</a>
+</nav>
+<div class="textbg">
+<div class="textsection1">
+Cake Shop
+</div></div>
+<div class="recipes"></div>
+<div class="textbg">
+<div class="textsection">
+<BR>The cake is a triumph of sugar and flour, towering with buttercream and strawberries to bring it that celebratory colour and freshness.
+<BR>There’s something really special about cake.<BR>Whether it’s one you’re making from scratch for a birthday party full of kindergartners (good luck!),
+or yet another slice of unicorn cake marking a celebration, or even just a piece smuggled in between Netflix and chilling.
+<BR>The universal truth is that cake is bae. <BR><BR>
+</div></div>
+<div class="cakethree"></div>
+<div class="textbg">
+<div class="textsection1">
+A cake is a cake, beautiful as it is.
+</div></div>
+<div class="salad"></div>
+<div class="textbg">
+<div class="textsection">
+<br><b>"Enjoy life and eat cake."<br><br><hr color="#be7e3e">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<b></div></div>
+</body>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</html>
